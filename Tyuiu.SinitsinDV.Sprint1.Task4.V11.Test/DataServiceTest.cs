@@ -8,11 +8,10 @@ namespace Tyuiu.SinitsinDV.Sprint1.Task4.V11.Test
         public void ValidExpression()
         {
             DataService ds = new DataService();
-            double x = Math.Atan(3);
-            double y = Math.Pow(2, 3);
-            double value = x / y;
+            double x = 3;
+            double y = Math.Pow(2, 2);                           
             var res = ds.Calculate(x, y);
-            Assert.AreEqual(value, res);
+            Assert.AreEqual(0.312, res);
         }
     }
 }

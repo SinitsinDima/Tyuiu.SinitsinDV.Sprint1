@@ -5,7 +5,7 @@ namespace Tyuiu.SinitsinDV.Sprint1.Task4.V11.Lib
     {
         public double Calculate(double x, double y)
         {
-            return (x / y);
+            return Math.Atan(x) / Math.Round(y, 3);
         }
     }
 }
