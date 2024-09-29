@@ -6,7 +6,7 @@ namespace Tyuiu.SinitsinDV.Sprint1.Task4.V11.Lib
         public double Calculate(double x, double y)
         {
             var res = Math.Atan(x) / Math.Pow(y, 3);
-            var res2 = Math.Round(res);
+            var res2 = Math.Round(res, 3);
             return res2;
 
         }

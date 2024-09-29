@@ -10,9 +10,9 @@ namespace Tyuiu.SinitsinDV.Sprint1.Task4.V11.Test
             DataService ds = new DataService();
             double x = 5;
             double y = 5;
-            double wait = 0.010;
+            double wait = 0.011;
             var res = ds.Calculate(x, y);
-            Assert.AreEqual(res, res);
+            Assert.AreEqual(wait, res);
             
         }
     }
