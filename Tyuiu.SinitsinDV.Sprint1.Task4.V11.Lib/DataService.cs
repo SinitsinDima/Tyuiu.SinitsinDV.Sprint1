@@ -5,7 +5,10 @@ namespace Tyuiu.SinitsinDV.Sprint1.Task4.V11.Lib
     {
         public double Calculate(double x, double y)
         {
-            return (Math.Tan(x) / Math.Pow(y, 2));
+            var res = Math.Atan(x) / Math.Pow(y, 3);
+            var res2 = Math.Round(res);
+            return res2;
+
         }
     }
 }
