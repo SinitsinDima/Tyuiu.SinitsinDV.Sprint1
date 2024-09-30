@@ -1,6 +1,4 @@
-﻿using FractionDigitExtractor;
-using System.Globalization;
-using tyuiu.cources.programming.interfaces.Sprint1;
+﻿using tyuiu.cources.programming.interfaces.Sprint1;
 namespace Tyuiu.SinitsinDV.Sprint1.Task5.V5.Lib
 {
     public class DataService : ISprint1Task5V5
@@ -8,8 +6,9 @@ namespace Tyuiu.SinitsinDV.Sprint1.Task5.V5.Lib
 
         public int Calculate(double x)
         {
-            double res = x + double(x);
-            return x;
+            double FractionalPart = x - Math.Truncate(x);
+            int FirstDigit = (int)(FractionalPart * 10);
+            return FirstDigit;
         }
     }
 
