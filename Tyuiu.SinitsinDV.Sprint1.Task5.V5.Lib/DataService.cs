@@ -1,4 +1,5 @@
-﻿using System.Globalization;
+﻿using FractionDigitExtractor;
+using System.Globalization;
 using tyuiu.cources.programming.interfaces.Sprint1;
 namespace Tyuiu.SinitsinDV.Sprint1.Task5.V5.Lib
 {
@@ -7,7 +8,8 @@ namespace Tyuiu.SinitsinDV.Sprint1.Task5.V5.Lib
 
         public int Calculate(double x)
         {
-            return 
+            double res = x + double(x);
+            return x;
         }
     }
 
